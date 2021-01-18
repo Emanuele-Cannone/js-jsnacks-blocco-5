@@ -2,6 +2,10 @@
 // Dividi in due array separati le zucchine che misurano meno o più di 15cm. 
 // Infine stampa separatamente quanto pesano i due gruppi di zucchine.
 
+var zucchineLittle = [];
+var zucchineBig = [];
+
+
 var zucchine = [
   {
     varietà : 'Zucchino nero di Milano',
@@ -61,11 +65,16 @@ var sommaPiccole = 0;
 for (var i = 0; i < zucchine.length; i++){
   if (zucchine[i].lunghezza > 15){
     sommaGrandi += zucchine[i].lunghezza;
+    zucchineBig.push(zucchine[i]);
   } else {
     sommaPiccole += zucchine[i].lunghezza;
+    zucchineLittle.push(zucchine[i]);
   }
 };
 
 console.log(sommaGrandi);
 console.log(sommaPiccole);
  
+
+console.log(zucchineBig);
+console.log(zucchineLittle);
