@@ -55,13 +55,17 @@ var zucchine = [
   }
 ];
 
-var somma = 0;
+var sommaGrandi = 0;
+var sommaPiccole = 0;
 
 for (var i = 0; i < zucchine.length; i++){
   if (zucchine[i].lunghezza > 15){
-    somma += zucchine[i].lunghezza;
-  };
+    sommaGrandi += zucchine[i].lunghezza;
+  } else {
+    sommaPiccole += zucchine[i].lunghezza;
+  }
 };
 
-console.log(somma);
+console.log(sommaGrandi);
+console.log(sommaPiccole);
  
