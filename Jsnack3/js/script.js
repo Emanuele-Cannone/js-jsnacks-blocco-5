@@ -1,6 +1,6 @@
-// Jsnack2 - Creare un array che contiene 10 oggetti che rappresentano una zucchina, 
-// indicandone per ognuno varietà, peso e lunghezza. Calcola quanto pesano tutte le zucchine.
-
+// Jsnack3 - Creare  un array che contiene 10 oggetti che rappresentano una zucchina.
+// Dividi in due array separati le zucchine che misurano meno o più di 15cm. 
+// Infine stampa separatamente quanto pesano i due gruppi di zucchine.
 
 var zucchine = [
   {
@@ -55,9 +55,13 @@ var zucchine = [
   }
 ];
 
-var sommaPeso = 0; // qui prendo il primo valore di peso
-for (var i = 0; i < zucchine.length; i++){ 
-  sommaPeso += zucchine[i].peso; // qui sommo inizialmente il primo valore + il secondo POI la somma con il terzo POI ecc...
+var somma = 0;
+
+for (var i = 0; i < zucchine.length; i++){
+  if (zucchine[i].lunghezza > 15){
+    somma += zucchine[i].lunghezza;
+  };
 };
 
-console.log(sommaPeso);// qui vedo se non esplode il mondo
+console.log(somma);
+ 
