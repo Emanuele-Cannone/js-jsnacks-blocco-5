@@ -55,9 +55,9 @@ var zucchine = [
   }
 ];
 
-var sommaPeso = zucchine[0].peso;
-for (var i = 1; i < zucchine.length; i++){
-  sommaPeso += zucchine[i].peso;
+var sommaPeso = zucchine[0].peso; // qui prendo il primo valore di peso
+for (var i = 1; i < zucchine.length; i++){ // qui creo un contatore dal 2 valore di peso fino all'ultimo
+  sommaPeso += zucchine[i].peso; // qui sommo inizialmente il primo valore + il secondo POI la somma con il terzo POI ecc...
 };
 
-console.log(sommaPeso);
+console.log(sommaPeso);// qui vedo se non esplode il mondo
